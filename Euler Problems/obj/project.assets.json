@@ -9,19 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\Kilia\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "E:\\Visual Studio\\Shared components, tools and SDKs\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
+      "projectUniqueName": "D:\\Github\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
       "projectName": "Euler Problems",
-      "projectPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
+      "projectPath": "D:\\Github\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
       "packagesPath": "C:\\Users\\Kilia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\obj\\",
+      "outputPath": "D:\\Github\\Euler-Problems\\Euler Problems\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Visual Studio\\Shared components, tools and SDKs\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Kilia\\AppData\\Roaming\\NuGet\\NuGet.Config",

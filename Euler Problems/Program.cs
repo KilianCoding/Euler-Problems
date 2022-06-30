@@ -12,7 +12,7 @@ namespace Euler.Problems
 
         static void Main(string[] args)
         {
-            Problem3();
+            Problem4ButBetter();
         }
 
         #region First 10
@@ -22,7 +22,7 @@ namespace Euler.Problems
             //Find the sum of all the multiples of 3 or 5 below 1000.
 
             int total = 0;
-            for (int x=0; x < 1000; x++)
+            for (int x = 0; x < 1000; x++)
             {
                 if (x % 3 == 0 || x % 5 == 0)
                 {
@@ -54,7 +54,7 @@ namespace Euler.Problems
             }
             Console.WriteLine(total);
         }
-        
+
         static void Problem3()
         {
             //The prime factors of 13195 are 5, 7, 13 and 29.
@@ -63,7 +63,7 @@ namespace Euler.Problems
             long total = 600851475143;
             long morbiggest = 2; //Biggest prime factor
             int ඞ = 2; //Number we are checking if is a (prime) factor
-            
+
             while (ඞ < total)
             {
                 if (total % ඞ == 0)
@@ -74,19 +74,57 @@ namespace Euler.Problems
                 ඞ++;
 
                 morbiggest = Math.Max((int)ඞ, (int)morbiggest);
-                
+
             }
             Console.WriteLine(morbiggest);
             //The smallest factor of a number will always be a prime factor
             //We find the smallest factor of the number, divide it to get a new total and store that factor if it bigger than the previous factor   
             //this repeats until the factor being tested >= total
         }
-        #endregion
         static void Problem4()
         {
             //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
             //Find the largest palindrome made from the product of two 3 - digit numbers
 
+            for (int a = 999; a > 100; a--)
+            {
+                for (int b = 999; b > 100; b--)
+                {
+                    string result = (a * b).ToString();
+                    int half = (result.Length / 2);
+                    int length = result.Length;
+                    char[] str2 = result.Substring(half, length - half).ToCharArray();
+                    Array.Reverse(str2);
+                    string str = new string(str2);
+
+                    if (result.Substring(0, half) == str)
+                    {
+                        Console.WriteLine(a * b);
+                    }
+                }
+            }
+            #endregion
+        }
+        static void Problem4ButBetter()
+        {
+            //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+            //Find the largest palindrome made from the product of two 3 - digit numbers
+
+            for (int a = 999; a > 100; a--)
+            {
+                for (int b = 999; b > 100; b--)
+                {
+                    string result = (a * b).ToString();
+                    char[] temp = result.ToCharArray();
+                    temp.Reverse();
+                    string str = new string(temp);
+
+                    if (result == str)
+                    {
+                        Console.WriteLine(a * b);
+                    }
+                }
+            }
         }
     }
 }
