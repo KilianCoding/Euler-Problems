@@ -78,8 +78,15 @@ namespace Euler.Problems
             }
             Console.WriteLine(morbiggest);
             //The smallest factor of a number will always be a prime factor
-            //We find the smallest factor of the number, divide it to get a new number and store that number
+            //We find the smallest factor of the number, divide it to get a new total and store that factor if it bigger than the previous factor   
+            //this repeats until the factor being tested >= total
         }
         #endregion
+        static void Problem4()
+        {
+            //A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+            //Find the largest palindrome made from the product of two 3 - digit numbers
+
+        }
     }
 }

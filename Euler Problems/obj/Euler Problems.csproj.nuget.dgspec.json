@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\Euler-Problems\\Euler Problems\\Euler Problems.csproj": {}
+    "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\Euler Problems.csproj": {}
   },
   "projects": {
-    "D:\\Github\\Euler-Problems\\Euler Problems\\Euler Problems.csproj": {
+    "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\Euler Problems.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
+        "projectUniqueName": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
         "projectName": "Euler Problems",
-        "projectPath": "D:\\Github\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
+        "projectPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\Euler Problems.csproj",
         "packagesPath": "C:\\Users\\Kilia\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\Euler-Problems\\Euler Problems\\obj\\",
+        "outputPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\Euler-Problems\\Euler Problems\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Visual Studio\\Shared components, tools and SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Kilia\\AppData\\Roaming\\NuGet\\NuGet.Config",
