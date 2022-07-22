@@ -12,7 +12,7 @@ namespace Euler.Problems
 
         static void Main(string[] args)
         {
-            Problem4ButBetter();
+            Problem7();
         }
 
         #region First 10
@@ -125,6 +125,92 @@ namespace Euler.Problems
                     }
                 }
             }
+        }
+        
+        static void Problem5()
+        {
+            //2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+            //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20 ?
+
+            bool found = false;
+            int result = 0;
+            for (int x = 20; !found; x += 20)
+            {
+                for (int i = 3; i<20; i++)
+                {
+                    if (x % i != 0)
+                    {
+                        found = false;
+                        break;
+                    }
+                    else
+                    {
+                        result = x;
+                        found = true;
+                    }
+                }
+            }
+            Console.WriteLine(result);
+
+            //Every iteration of the loop increases the number being checked by 20
+            //For each number, we divide by every number between 3 and 19 (0, 1, 2 and 20 are always factors)
+            //If any of the numbers result in a remainder, we move on to the next number
+        }
+        static void Problem6()
+        {
+            //The sum of the squares of the first ten natural numbers is 285,
+            //The square of the sum of the first ten natural numbers is 3025,
+            //Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 2640.
+            //Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum. 
+
+            int sumsquare = 0;
+            int squaresum = 0;
+
+            for (int x = 1; x < 101; x++)
+            {
+                sumsquare = sumsquare + (x*x);
+                Console.WriteLine(x + "     " + sumsquare);
+
+            }
+
+            for (int y = 1; y < 101; y++)
+            {
+                squaresum = squaresum + y;
+                Console.WriteLine(y+"       "+squaresum);
+
+            }
+            squaresum = squaresum * squaresum;
+
+            
+            
+            Console.WriteLine(squaresum - sumsquare);
+
+            //im not commenting this lol
+        }
+
+        static void Problem7()
+        {
+            //By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+            //What is the 10001st prime number ?
+
+            int count = 0;
+            int num = 0;
+
+            for (int x = 2; num < 10002; x++)
+            {
+                for (int i = 2; i < x; i++)
+                {
+                    if (x % i != 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+
         }
     }
 }
