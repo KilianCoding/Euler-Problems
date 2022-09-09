@@ -12,7 +12,7 @@ namespace Euler.Problems
 
         static void Main(string[] args)
         {
-            Problem7();
+            Problem8();
         }
 
         #region First 10
@@ -194,23 +194,63 @@ namespace Euler.Problems
             //What is the 10001st prime number ?
 
             int count = 0;
-            int num = 0;
+            int num = 4;
+            bool valid = false;
+            
 
-            for (int x = 2; num < 10002; x++)
+            for (count = 2; count < 10001; num++)
             {
-                for (int i = 2; i < x; i++)
+                for (int y = 2; y < num; y++)
                 {
-                    if (x % i != 0)
+                    valid = true;
+                    if (num % y == 0)
                     {
-                        break;
-                    }
-                    else
-                    {
+                        valid = false;
                         break;
                     }
                 }
+                if (valid)
+                {
+                    //Console.WriteLine(num);
+                    count++;
+                }
             }
-
+            Console.WriteLine(count);
+            Console.WriteLine(num-1);
+        }
+        static void Problem8()
+        {
+            //The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
+            //Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+            string number = "7316717653133062491922511967442657474235534919493496983520312774506326239578318016984801869478851843858615607891129494954595017379583319528532088" +
+                "0551112540698747158523863050715693290963295227443043557668966489504452445231617318564030987111217223831136222989342338030813533627661428280644448664523874930" +
+                "3589072962904915604407723907138105158593079608667017242712188399879790879227492190169972088809377665727333001053367881220235421809751254540594752243525849077" +
+                "1167055601360483958644670632441572215539753697817977846174064955149290862569321978468622482839722413756570560574902614079729686524145351004748216637048440319" +
+                "9890008895243450658541227588666881164271714799244429282308634656748139191231628245861786645835912456652947654568284891288314260769004224219022671055626321111" +
+                "1093705442175069416589604080719840385096245544436298123098787992724428490918884580156166097919133875499200524063689912560717606058861164671094050775410022569" +
+                "8315520005593572972571636269561882670428252483600823257530420752963450";
+            
+            long total = 1;
+            string check = "";
+            foreach (char x in number)
+            {
+                if (check.Length < 14)
+                {
+                    check += x;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            foreach (char y in check)
+            {
+                if (y != '0')
+                {
+                    total = total * Convert.ToInt32(y);
+                }
+            }
+            Console.WriteLine(total);
         }
     }
 }
